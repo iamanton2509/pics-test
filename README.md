@@ -1,0 +1,1 @@
+I can't delete my own comment because of features of the DummyJSON. According to its documentation (https://dummyjson.com/docs/comments/#add) all new comments added using the POST method have the id: 341. Adding a new comment will not add it into the server. Therefore, attempting to delete a comment with a non-existent id results in a 404 error.
