@@ -75,10 +75,10 @@ const commentsSlice = createSlice({
     name: 'comments',
     initialState,
     reducers: {
-        addComment(state, action: PayloadAction<any>){
+        addComment(state, action: PayloadAction<IComment>){
             state.comments.push(action.payload);
         },
-        deleteComment(state, action: PayloadAction<number | string>){
+        deleteComment(state, action: PayloadAction<number>){
             state.comments = state.comments.filter(comment => comment.id !== action.payload);
         }
     },
